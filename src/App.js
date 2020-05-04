@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+import RecipeItemList from './containers/RecipeItemList';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <h1>This is the App component</h1>
+      <RecipeItemList />
     </div>
   );
 }
