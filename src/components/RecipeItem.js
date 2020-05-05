@@ -3,12 +3,14 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-const RecipeItem = () => {
+const RecipeItem = ({recipe}) => {
     
     return (
-        <Card style={{ margin: "1rem", height: "auto"}}>
+        <Card style={{ width: "20rem", margin: "2rem"}}>
             <Card.Body>
-                <Card.Title>Recipe</Card.Title>
+                <Card.Img variant="top" src={recipe.strMealThumb} />
+                <Card.Title>{recipe.strMeal}</Card.Title>
+                <Card.Subtitle>{recipe.strCategory}</Card.Subtitle>
                 <Card.Text>
                     This is an example of the RecipeItem component
                 </Card.Text>
